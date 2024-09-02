@@ -6,11 +6,16 @@ SELECT * FROM menu_items
 SELECT COUNT(DISTINCT item_name) as "number"
 FROM menu_items
 	
--- ● ¿Cuál es el artículo menos caro y el más caro en el menú? R= Shrimp Scampi; 19.95 USD
+-- ● ¿Cuál es el artículo menos caro y el más caro en el menú? R= más caro: Shrimp Scampi; 19.95 USD, menos caro: Edamame; 5 USD
 	select item_name, price 
 	from menu_items
 	where price = (
 	select max (price) from menu_items)
+
+	select item_name, price 
+	from menu_items
+	where price = (
+	select min (price) from menu_items)
 -- ● ¿Cuántos platos americanos hay en el menú? R= 6 platillos
 	select count (category )
 from menu_items
