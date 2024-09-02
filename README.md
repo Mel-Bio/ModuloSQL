@@ -1,7 +1,7 @@
 # ModuloSQL
 Evidencia de trabajo con lenguaje SQL
 
-##Objetivo
+## Objetivo
 Presentar los aprendizajes obtenidos respecto a lenguaje SQL y su uso para manejar la información y obtener respuestas y resultados. 
 
 ## Resultados
